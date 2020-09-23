@@ -3,7 +3,7 @@
 		<section>
 			<div class="col1">
 				<router-link to="/">
-					<h3>{{ title }}</h3>
+					<h3>LightNotes</h3>
 				</router-link>
 				<ul class="inline">
 					<li>
@@ -23,11 +23,6 @@
 
 <script>
 export default {
-	data(){
-		return { 
-			title: process.env.VUE_APP_TITLE
-		}
-	},
 	methods: {
 		logout() {
 			this.$store.dispatch("logout");
